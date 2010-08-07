@@ -1,5 +1,7 @@
 Daum OpenAPI 중의 OAuth 부분을 쉽게 사용할 수 있도록 만든 PHP Library 입니다.
 
+http://github.com/azki/Daum-OAuth 에서 소스를 배포하고 있습니다. 
+
 http://oauth.net 에서 제공하는 OAuth.php 를 사용하고 있습니다.
 
 

@@ -4,6 +4,10 @@
  *
  * Basic lib to work with Daum OAuth.
  *
+ * http://github.com/azki/Daum-OAuth
+ * Version: 1.0.0
+ * Last Update: 2010-08-04
+ * 
  * Daum OAuth page: https://apis.daum.net/oauth/main/welcome
  *
  * Code based on:
@@ -11,8 +15,6 @@
  * twitterlibphp - http://github.com/poseurtech/twitterlibphp
  * twitterOAuth.php - http://abrah.am/
  * 
- * Version: 1.0.0
- * Last Update: 2010-08-04
  */
 
 /* Load OAuth lib. You can find it at http://oauth.net */
