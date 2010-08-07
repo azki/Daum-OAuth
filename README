@@ -1,0 +1,35 @@
+Daum OpenAPI 중의 OAuth 부분을 쉽게 사용할 수 있도록 만든 PHP Library 입니다.
+
+http://oauth.net 에서 제공하는 OAuth.php 를 사용하고 있습니다.
+
+
+* 생성자.
+DaumOAuth(CONSUMER_KEY, CONSUMER_SECRET, CALLBACK_URL);
+DaumOAuth(CONSUMER_KEY, CONSUMER_SECRET, CALLBACK_URL, OAUTH_TOKEN, OAUTH_TOKEN_SECRET);
+
+* 주요 메소드.
+getRequestToken()
+getAuthorizeURL($token)
+getAccessToken($verifier)
+oAuthRequest($url, $args = array(), $method = NULL)
+
+* 예제 및 소스코드.
+http://daumoauth.azki.org/
+http://daumoauth.azki.org/index.phps
+http://daumoauth.azki.org/daumOAuth.phps
+
+
+Daum OAuth 공식 페이지는 https://apis.daum.net/oauth/main/welcome 입니다.
+
+컨슈머 등록은 https://apis.daum.net/oauth/consumer/input 에서 하십시요.
+
+* Request 토큰 URL
+https://apis.daum.net/oauth/requestToken
+request 토큰 요청시 oauth_callback 값이 컨슈머의 Callback 경로와 동일해야 합니다.
+
+* 사용자 인증 URL
+https://apis.daum.net/oauth/authorize
+
+* Access 토큰 URL
+https://apis.daum.net/oauth/accessToken
+서명 메소드는 HMAC-SHA1만 지원됩니다.
