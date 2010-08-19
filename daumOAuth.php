@@ -76,7 +76,7 @@ class DaumOAuth {/*{{{*/
 	/**
 	 * Parse a URL-encoded OAuth response
 	 */
-	function oAuthParseResponse($responseString) {
+	function oAuthParseResponse($responseString) {/*{{{*/
 		$r = array();
 		foreach (explode('&', $responseString) as $param) {
 			$pair = explode('=', $param, 2);
@@ -132,9 +132,6 @@ class DaumOAuth {/*{{{*/
 		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 30);
 		curl_setopt($ch, CURLOPT_TIMEOUT, 30);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-		//////////////////////////////////////////////////
-		///// Set to 1 to verify Twitter's SSL Cert //////
-		//////////////////////////////////////////////////
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
 		if (isset($post_data)) {
 			curl_setopt($ch, CURLOPT_POST, 1);
