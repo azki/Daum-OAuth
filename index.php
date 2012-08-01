@@ -3,8 +3,8 @@ require_once('./daumOAuth.php');
 
 session_start();//for save request token.
 
-$consumer_key = '090cb499-6e91-488c-bb96-fbf4be7d2ae0';
-$consumer_secret = 'T7jB3zXmcH.J76X5wkfKy1biG4My4PNNl4r.TZ9ZHw5.S1wRz9GSRg00';
+$consumer_key = 'c3f0b01b-1d88-44ef-ba43-03f01c9b6ba7';
+$consumer_secret = 'd_BTMyP6mALSdkUnYMCUbIZfdP6XGr5dbu1.SgFbgHd4paGkqtmCzg00';
 $callback_url = 'http://daumoauth.azki.org/';
 
 $session_var_names = array('request_token', 'user_auth_url', 'access_token', 'blog_info');
