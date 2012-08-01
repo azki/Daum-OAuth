@@ -47,7 +47,7 @@ switch ($o_mode) {
 			$to = new DaumOAuth($consumer_key, $consumer_secret, $callback_url, $aTok['oauth_token'], $aTok['oauth_token_secret']);
 			$url = 'http://apis.daum.net/blog/info/blog.do';
 			$args = array('blogName'=>$blog_id);
-			$response = $to->OAuthRequest($url, $args);
+			$response = $to->OAuthRequest($url, $args, 'GET');
 			$_SESSION['blog_info'] = $response;
 		}
 		break;
