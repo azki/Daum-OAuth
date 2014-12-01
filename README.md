@@ -4,6 +4,8 @@ http://github.com/azki/Daum-OAuth 에서 소스를 배포하고 있습니다.
 
 http://oauth.net 에서 제공하는 OAuth.php 를 사용하고 있습니다.
 
+  아마 PHP 5.0+ 일듯
+
 
 * 생성자.
 DaumOAuth(CONSUMER_KEY, CONSUMER_SECRET, CALLBACK_URL);
